@@ -9,4 +9,10 @@ package transpo;
 
 public class Transportation {
 
+    protected boolean hasWheels;
+
+    public Transportation(){
+
+    }
+
 }
