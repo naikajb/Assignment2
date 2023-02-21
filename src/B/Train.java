@@ -20,6 +20,7 @@ public class Train extends WheeledTransportation {
      */
     public Train(){
         super();
+        super.setNumOfWheels(10);
         numOfVehicles = 16;
         startingStation = "Montreal";
         destinationStation = "Toronto";
@@ -38,16 +39,31 @@ public class Train extends WheeledTransportation {
         destinationStation = dest;
         this.numOfVehicles = numOfVehicles;
     }
+    /**
+     *
+     * @param train
+     */
+    public Train (Train train){
+        super(train);
+        numOfVehicles = train.getNumOfVehicles();
+        startingStation = train.getStartingStation();
+        destinationStation = train.getDestinationStation();
+    }
+
 
     /**
      * @return info of train and super.toString()
      */
     @Override
     public String toString(){
-        return "This Train has " + numOfWheels + " wheels, and a maximum speed of " +maxSpeed+ " km/h.There are " + numOfVehicles +
-                " vehicles on this train. The starting station is "
-                +startingStation+ " and the destination is " +destinationStation+".\n";
+        return "This Train has " + numOfWheels
+                + " wheels, and a maximum speed of "
+                +maxSpeed+ " km/h.There are " + numOfVehicles
+                + " vehicles on this train. The starting station is "
+                +startingStation+ " and the destination is "
+                +destinationStation+".\n";
     }
+
 
     /**
      *
@@ -74,17 +90,6 @@ public class Train extends WheeledTransportation {
         return super.equals(t) && numOfVehicles == t.getNumOfVehicles()
                 && startingStation.equals(t.startingStation)
                 && destinationStation.equals(t.destinationStation);
-    }
-
-    /**
-     *
-     * @param train
-     */
-    public Train (Train train){
-        super(train);
-        numOfVehicles = train.getNumOfVehicles();
-        startingStation = train.getStartingStation();
-        destinationStation = train.getDestinationStation();
     }
 
 

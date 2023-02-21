@@ -74,7 +74,9 @@ public class Driver {
         System.out.println("The equality of objects is tested below:"
                 + "\n\ta1 and tram2 are equal: " +a1.equals(tram2)
                 + "\n\tme1 and me2 are equal: " +me1.equals(me2)
-                + "\n\ttram2 and tram1 are equal: " +tram2.equals(tram1));
+                + "\n\ttram2 and tram1 are equal: " +tram2.equals(tram1)
+                + "\n\tme1 and me1" + me1.equals(me1));
+
 
     }
 

@@ -17,6 +17,7 @@ public class Metro extends Train {
 
     public Metro(){
         super();
+        super.setNumOfWheels(40);
         noOfStops = 4;
     }
 
