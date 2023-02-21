@@ -47,7 +47,7 @@ public class Driver {
 
         WheeledTransportation wt1 = new WheeledTransportation();
         System.out.println(wt1.toString());
-        WheeledTransportation wt2 = new WheeledTransportation(16,80);
+        WheeledTransportation wt2 = new WheeledTransportation();
         System.out.println(wt2.toString());
 
         Monowheel mo1 = new Monowheel();
