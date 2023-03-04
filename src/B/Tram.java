@@ -50,7 +50,7 @@ public class Tram extends Metro {
     @Override
     public String toString(){
         return "This Tram has " + numOfWheels+ " wheels, " +numOfVehicles+" vehicles and a maximum speed of " + maxSpeed+ " km/h. It starts in " +startingStation+ " and ends in " +destinationStation+ " and has " +noOfStops+" stops. It was created in "
-                + yearOfCreation + ".\n";
+                + yearOfCreation + ".";
     }
 
     @Override

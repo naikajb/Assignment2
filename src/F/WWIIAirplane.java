@@ -29,10 +29,10 @@ public class WWIIAirplane extends Aircraft{
     public String toString(){
 
         if (twinEngine){
-            return "This World War II airplane worth " + price + "$ and can reach up to " + maxElevation +" km in the air. It does not have a twin engine.\n";
+            return "This World War II airplane worth " + price + "$ and can reach up to " + maxElevation +" km in the air. It does not have a twin engine.";
         }
         else {
-            return "This World War II airplane worth " + price + "$ and can reach up to " + maxElevation +" km in the air. It has a twin engine.\n";
+            return "This World War II airplane worth " + price + "$ and can reach up to " + maxElevation +" km in the air. It has a twin engine.";
         }
     }
 

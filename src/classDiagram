@@ -1,0 +1,106 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Aircraft {
+  + Aircraft(double, double): 
+  + Aircraft(): 
+  + Aircraft(Aircraft): 
+  # maxElevation: double
+  # price: double
+  + toString(): String
+  + getPrice(): double
+  + getMaxElevation(): double
+  + equals(Object): boolean
+}
+class Ferry {
+  + Ferry(): 
+  + Ferry(double, double): 
+  + Ferry(Ferry): 
+  # maxSpeed: double
+  # maxLoad: double
+  + equals(Object): boolean
+  + getMaxSpeed(): double
+  + getMaxLoad(): double
+  + toString(): String
+}
+class Metro {
+  + Metro(Metro): 
+  + Metro(): 
+  + Metro(int, double, String, String, int, int): 
+  # noOfStops: int
+  + setNoOfStops(int): void
+  + toString(): String
+  + getNoOfStops(): int
+  + equals(Object): boolean
+}
+class Monowheel {
+  + Monowheel(Monowheel): 
+  + Monowheel(): 
+  + Monowheel(int, double, double): 
+  # maxWeight: double
+  - getMaxWeight(): double
+  + toString(): String
+  + equals(Object): boolean
+}
+class Train {
+  + Train(): 
+  + Train(Train): 
+  + Train(int, double, String, String, int): 
+  # startingStation: String
+  # numOfVehicles: int
+  # destinationStation: String
+  + getNumOfVehicles(): int
+  + equals(Object): boolean
+  + toString(): String
+  + getStartingStation(): String
+  + getDestinationStation(): String
+}
+class Tram {
+  + Tram(Tram): 
+  + Tram(): 
+  + Tram(int, double, String, String, int, int, int): 
+  # yearOfCreation: int
+  + getYearOfCreation(): int
+  + equals(Object): boolean
+  + toString(): String
+}
+class Transportation {
+  + Transportation(Transportation): 
+  + Transportation(): 
+  + toString(): String
+}
+class WWIIAirplane {
+  + WWIIAirplane(double, double, boolean): 
+  + WWIIAirplane(): 
+  + WWIIAirplane(WWIIAirplane): 
+  # twinEngine: boolean
+  + equals(Object): boolean
+  + getTwinEngine(): boolean
+  + toString(): String
+}
+class WheeledTransportation {
+  + WheeledTransportation(int, double): 
+  + WheeledTransportation(WheeledTransportation): 
+  + WheeledTransportation(): 
+  # maxSpeed: double
+  # numOfWheels: int
+  + getMaxSpeed(): double
+  + toString(): String
+  + equals(Object): boolean
+  + setNumOfWheels(int): void
+  + setMaxSpeed(double): void
+  + getNumOfWheels(): int
+}
+
+Aircraft               -[#000082,plain]-^  Transportation        
+Ferry                  -[#000082,plain]-^  Transportation        
+Metro                  -[#000082,plain]-^  Train                 
+Monowheel              -[#000082,plain]-^  WheeledTransportation 
+Train                  -[#000082,plain]-^  WheeledTransportation 
+Tram                   -[#000082,plain]-^  Metro                 
+WWIIAirplane           -[#000082,plain]-^  Aircraft              
+WheeledTransportation  -[#000082,plain]-^  Transportation        
+@enduml

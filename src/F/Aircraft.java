@@ -50,7 +50,7 @@ public class Aircraft extends Transportation {
     public String toString(){
         return "This Aircraft is worth "
                 +price +"$ and can reach up to "
-                +maxElevation + " km in the air.\n";
+                +maxElevation + " km in the air.";
     }
 
     @Override

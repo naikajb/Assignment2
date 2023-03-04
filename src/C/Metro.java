@@ -66,7 +66,7 @@ public class Metro extends Train {
     public String toString() {
         return "This Metro has " + numOfWheels+ " wheels,"  +numOfVehicles+ " vehicles and a maximum speed of "
                 + maxSpeed+ " km/h. It starts in " +startingStation
-                + " and it ends in " +destinationStation+ " and has " +noOfStops+" stops.\n";
+                + " and it ends in " +destinationStation+ " and has " +noOfStops+" stops.";
     }
 
     /**

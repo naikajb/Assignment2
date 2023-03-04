@@ -5,10 +5,9 @@ QUESTION: Does my program work correctly, or does it misbehave! WHY?
           program's behavior/output.
 
 
-
 My program works correctly for two reasons.
 
 First, it works because the 8 described classes of the assignment were grouped into the parent class 'Transportation'. Because of this, an array can be created with the different child classes since its makes them fit into one variable type.
 
-Secondly, the program works because the findLeastandMostExpensive() method iterates through every element of the array and checks the class of the object before continuing with any other operations. This step prevents the method from throwing a ClassCastException if it tries to utilize properties that are only present in the Aircraft class.
+Secondly, the program works because the findLeastandMostExpensive() method iterates through every element of the array and checks the class of the object before continuing with any other operations. This step prevents the method from throwing a ClassCastException if it tries to use properties that are only present in the Aircraft class.
 

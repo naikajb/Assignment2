@@ -1,3 +1,10 @@
+/**
+ * @author naikajean-baptiste
+ * Name(s) and ID(s): Naika Jean-Baptiste 40227367
+ * COMP249
+ * Assignment #2 - Part 1
+ * Due Date: March 4, 2023
+ */
 package D;
 
 import A.WheeledTransportation;
@@ -42,11 +49,12 @@ public class Monowheel extends WheeledTransportation {
      */
     @Override
     public String toString(){
-        return "\nThis Monowheel has 1 wheel and a maximum speed of "
+        return "This Monowheel has 1 wheel and a maximum speed of "
                 + maxSpeed + "It has a maximum weight of "
-                + maxWeight + " lbs.\n";
+                + maxWeight + " lbs.";
     }
 
+    @Override
     public boolean equals(Object o){
         if (this == o){
             return true;

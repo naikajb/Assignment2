@@ -9,10 +9,17 @@ package transpo;
 
 public class Transportation {
 
-    protected boolean hasWheels;
 
     public Transportation(){
 
     }
 
+    public Transportation(Transportation t){
+
+    }
+
+    @Override
+    public String toString() {
+        return "This is a transportation vehicle";
+    }
 }

@@ -61,7 +61,7 @@ public class Train extends WheeledTransportation {
                 +maxSpeed+ " km/h.There are " + numOfVehicles
                 + " vehicles on this train. The starting station is "
                 +startingStation+ " and the destination is "
-                +destinationStation+".\n";
+                +destinationStation+".";
     }
 
 
