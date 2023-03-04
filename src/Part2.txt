@@ -1,0 +1,7 @@
+QUESTION: Does my program work correctly, or does it misbehave! WHY?
+          Display the contents of both arrays, then submit a separate document (pdf, MS-Word, or text)
+          along with your assignment indicating whether or not the copying is correct.
+          In either case, you need to explain the reason for the correctness or failure of your
+          program's behavior/output.
+
+This program is expected to return an exact copy of the original array, but it does not behave that way. The copyTheObjects() method I implemented is able to return an array, but is doesn't return an exact copy of the original array. This happens because we receive the array as an array of Transportation Objects and so the method will only treat it as such. We want to copy a Transportation array, but the method will not look further to see what type of Transportation Object it is unless you specifically try to typecast into a child class of Transportation.
