@@ -89,74 +89,74 @@ public class DriverPart1 {
         //create 16 objects of Transportation class
         Aircraft a1 = new Aircraft(30000,15);
         System.out.println(a1);
-        System.out.println("");
+        System.out.println();
         Aircraft a2 = new Aircraft(a1);
         System.out.println(a2);
-        System.out.println("");
+        System.out.println();
         Aircraft a3 = new Aircraft();
         System.out.println(a3);
-        System.out.println("");
+        System.out.println();
 
         WWIIAirplane wa1 = new WWIIAirplane(3000,12,true);
         System.out.println(wa1);
-        System.out.println("");
+        System.out.println();
         WWIIAirplane wa2 = new WWIIAirplane(30000,12,false);
         System.out.println(wa2);
-        System.out.println("");
+        System.out.println();
 
         Ferry f1 = new Ferry();
         System.out.println(f1);
-        System.out.println("");
+        System.out.println();
         Ferry f2 = new Ferry(50,700);
         System.out.println(f2);
-        System.out.println("");
+        System.out.println();
         Ferry f3 = new Ferry(f2);
         System.out.println(f3);
-        System.out.println("");
+        System.out.println();
 
         WheeledTransportation wt1 = new WheeledTransportation();
         System.out.println(wt1);
-        System.out.println("");
+        System.out.println();
         WheeledTransportation wt2 = new WheeledTransportation();
         System.out.println(wt2);
-        System.out.println("");
+        System.out.println();
         WheeledTransportation wt3 = new WheeledTransportation(20,60);
         System.out.println(wt3);
-        System.out.println("");
+        System.out.println();
 
         Monowheel mo1 = new Monowheel();
         System.out.println(mo1);
-        System.out.println("");
+        System.out.println();
         Monowheel mo2 = new Monowheel(14,50,1000);
         System.out.println(mo2);
-        System.out.println("");
+        System.out.println();
         Monowheel mo3 = new Monowheel(1,70,150);
         System.out.println(mo3);
-        System.out.println("");
+        System.out.println();
 
         Train train1 = new Train(10,90,"Montreal", "New York",35);
         System.out.println(train1);
-        System.out.println("");
+        System.out.println();
         Train train2 = new Train();
         System.out.println(train2);
-        System.out.println("");
+        System.out.println();
         Train train3 = new Train(30,100,"New York", "Chicago",10);
         System.out.println(train3);
-        System.out.println("");
+        System.out.println();
 
         Metro me1 = new Metro(40,45,"Rimouski", "Gatineau", 30,15);
         System.out.println(me1);
-        System.out.println("");
+        System.out.println();
         Metro me2 = new Metro();
         System.out.println(me2);
-        System.out.println("");
+        System.out.println();
 
         Tram tram1  = new Tram(15,60,"Montreal", "Vancouver", 30, 15,1970);
         System.out.println(tram1);
-        System.out.println("");
+        System.out.println();
         Tram tram2 = new Tram();
         System.out.println(tram2);
-        System.out.println("");
+        System.out.println();
 
         System.out.println("The equality of objects is tested below:"
                 + "\n\ta1 and tram2 are equal:\t" +a1.equals(tram2)
@@ -169,7 +169,7 @@ public class DriverPart1 {
 
         //second array: without aircraft objects
         Transportation[] arr2 = {f1,tram2,tram1,me1,me2,train1,train2,mo2,mo1,wt1,wt2,wt3,f2,mo3,f3,train3};
-        System.out.println(arr1.length);
+        System.out.println();
         findLeastAndMostExpensiveAircraft(arr2);
         findLeastAndMostExpensiveAircraft(arr1);
 
